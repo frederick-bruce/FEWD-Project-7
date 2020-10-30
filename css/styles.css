@@ -168,6 +168,81 @@ main {
   border-radius: 10px;
 }
 
+/* *** Alert Banner */
+.alert {
+  grid-area: alert;
+  margin-right: 20px;
+
+}
+
+.alert-banner {
+  display: flex;
+  align-items: center;
+  background-color: #5D5FD6;
+  color: #fff;
+  border-radius: 10px;
+  margin-left: 30px;
+  margin-top: 10px;
+  padding-left: 10px;
+}
+
+.alert-banner-close {
+  padding-right: 10px;
+  margin-left: auto;
+  font-size: 20px;
+}
+
+.alert-banner-close:hover {
+  cursor: pointer;
+}
+
+/*  Traffic Charts */
+.traffic {
+  grid-area: traffic;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid rgb(194, 180, 180);
+}
+
+.traffic-nav {
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-left: 0px;
+  color: #5D5FD6;
+}
+
+.daily {
+  margin: 10px;
+  grid-area: daily;
+  font-size: 15px;
+  border-bottom: 1px solid rgb(194, 180, 180);
+}
+
+.widget-container-half {
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+.widget-container-full {
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+.widget-container-full,
+.widget-container-half {
+  width: 90vw;
+}
+
+.mobile-users {
+  margin: 10px;
+  grid-area: mobile-users;
+  border-bottom: 1px solid rgb(194, 180, 180);
+}
+
+
 
 
 stats-title {
