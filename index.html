@@ -1,62 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Web App Dashboard</title>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg==" crossorigin="anonymous"></script>
- <link rel="stylesheet" href="css/normalize.css">
- <link rel="stylesheet" href="css/styles.css">
-
-
-</head>
-<body>
-  
-<!-- Header -->
-
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web App Dashboard</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="toggleswitch" href="css/toggle-switch.css">
+    
+    </head>
+  <body>
+    
 <div class="grid-container">
-  <header class="top-header">
-    <h1 class="logo">Your<span class=smallLogo>App &trade;</span></h1>
-
-    <div class="top-info">
-        <div class="bell-icon">
-          <svg class="bell" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-          <path d="M24 18v-8c0-5.5-4.5-10-10-10S4 4.5 4 10v8l-4 8h9.1c.5 2.3 2.5 4 4.9 4s4.4-1.7 4.9-4H28l-4-8zM14 28c-1.3 0-2.4-.8-2.8-2h5.6c-.4 1.2-1.5 2-2.8 2zM3 24l3-6v-8c0-4.4 3.6-8 8-8s8 3.6 8 8v8l3 6H3z" fill="#fff"/></svg>
-        </div>
-
-                <div class="bell-notify" >1</div>
-
-                <img class="icon" src="images/member-4.jpg" alt="member-1">
-
-                <h3 class="profile">Joe Smith</h3>
-
-       </div>
-
-</header>
-
-
-<!-- Side Navigation Bar -->
-
-<nav>
-  <a href="#"></a><img class="svgIcon" src="icons/icon-dashboard.svg" alt="Dashboard">
-  <a href="#"></a><img class="svgIcon" src="icons/icon-members.svg" alt="members">
-  <a href="#"></a><img class="svgIcon" src="icons/icon-visits.svg" alt="visits">
-   <a href="#"></a><img class="svgIcon" src="icons/icon-settings.svg" alt="settings">
-</nav>
-
-<!-- Main Content -->
+       <header class="top-header">
+            <h1 class="logo">Your<span class="thinLogo">App &trade;</span></h1>
+            
+                <div class="top-info">
+                    <div class="bell-icon">
+                              <svg class="bell" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                              <path d="M24 18v-8c0-5.5-4.5-10-10-10S4 4.5 4 10v8l-4 8h9.1c.5 2.3 2.5 4 4.9 4s4.4-1.7 4.9-4H28l-4-8zM14 28c-1.3 0-2.4-.8-2.8-2h5.6c-.4 1.2-1.5 2-2.8 2zM3 24l3-6v-8c0-4.4 3.6-8 8-8s8 3.6 8 8v8l3 6H3z" fill="#fff"/></svg>
+                      </div>
+                                <div class="bell-notify">1</div>
+                                
+                                    <img class="avatar" src="images/member-2.jpg" alt="member-1">
+                                      
+                                    <h3 class="profile">Joe Smith</h3>
+                  </div>            
+                                    
+        </header>
+                
+                
+<!-- Nav Bar -->
+                
+      <nav>
+           <a href="#"><img class="svgIcon" src="icons/icon-dashboard.svg" alt="Dashboard"></a>
+           <a href="#"><img class="svgIcon" src="icons/icon-members.svg" alt="members"></a>
+           <a href="#"><img class="svgIcon" src="icons/icon-visits.svg" alt="visits"></a>
+           <a href="#"><img class="svgIcon" src="icons/icon-settings.svg" alt="settings"></a>
+        </nav>
+    
+  <!-- Main Content -->
+  
 
 <main>
-  <div class="main-header">
-    <h3 class="headline">Dashboard</h3>
-    <div class="main-header-search">
-      <input type="search" placeholder="Search">
-    </div>
-  </div>
+          <div class="main-header">
+              <h3 class="headline">Dashboard</h3>
+                  <div class="main-header-search">
+                      <input type="search" placeholder="Search..">
+                  </div>
+          </div>    
 
-  <div class="alert" id="alert">
+                <!-- alert banner  -->
+ 
+           <div class="alert" id="alert">
+              <!-- insert javascript here -->
+          </div>  
 
-</div>
+<!-- **************************************************************************** -->
 
 <!-- Line Graph Charts -->
 
@@ -102,9 +103,6 @@
                   <canvas id="mobile-chart"></canvas>
                 </div>
         </section>
-
-
-
 
 <!-- Social media section  -->
 
@@ -180,12 +178,8 @@
                   
   
     </div> 
-
-
-
-<!-- /* *********************************************** */
-    /* ************** New Members  ******************* */
-    /* *********************************************** */ -->
+    
+ <!-- New Members -->
   
   <section class="members">
     <h3 class="dash-title">New Members</h3>
@@ -228,9 +222,7 @@
 
 </section>
 
-<!-- /* *********************************************** */
-    /* ************** Recent Activity ******************* */
-    /* *********************************************** */ -->
+<!-- Recent Activity -->
   
  <section class="recent-activity">
     <h3 class="dash-title">Recent Activity</h3>
@@ -278,9 +270,7 @@
 
       
 
-<!-- /* *********************************************** */
-    /* ************** Messaging Widget ******************* */
-    /* *********************************************** */ -->
+<!-- Messaging -->
 
 <section class="message">
     <h3 class="dash-title">Message User</h3>
@@ -293,9 +283,8 @@
 </section>
 
 
-<!-- /* *********************************************** */
-    /* ************** Local Settings Widget ******************* */
-    /* *********************************************** */ -->
+
+    <!-- Local Settings -->
 
   <section class="settings">
     <h3 class="dash-title">Settings</h3>
@@ -344,44 +333,3 @@
   <script src="js/script.js"></script>  
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
